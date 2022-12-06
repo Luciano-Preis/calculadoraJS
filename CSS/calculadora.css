@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: #1C2A44;
+}
+
+:root {
+    --background-gradient: linear-gradient(30deg, #f39c12 30%, #f1c40f);
+    --gray: #34495e;
+    --darkgray: #2c3e50;
+  }
+
+#divCalculator{
+    height: 600px;
+    width: 400px;
+    position: relative;
+    margin: 0 auto;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-color: #1a1a1a;
+    box-shadow: 0 4px 8px 0 #00FFFF, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+#title{
+    text-align: center;
+    font-family: arial;
+    font-size: 40px;
+    padding-top: 50px;
+    color: #b3b3b3;
+}
+
+select{
+    appearance: none;
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+    flex: 1;
+    padding: 0 1em;
+    color: #fff;
+    background-color: var(--darkgray);
+    background-image: none;
+    cursor: pointer;
+}
+select::-ms-expand {
+    display: none;
+}
+#calculator{
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    width: 20em;
+    height: 3em;
+    border-radius: .25em;
+    overflow: hidden;
+    margin-top: 50px; 
+}
+#calculator::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    background-color: #34495e;
+    transition: .25s all ease;
+    pointer-events: none;
+}
+#calculator:hover::after {
+    color: #00FFFF;
+}
+
+p{
+    color: #ffffff;
+    margin-top: 30px;
+    font-family: arial;
+    font-size: 20px;
+}
+input{
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    border: none;
+}
+#answer1{
+    font-size: 30px;
+}
+#calc{
+    padding: 10px 20px 10px 20px;
+    font-family: arial;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #00ffff;
+    color:  #4d4d4d;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 0 #009999;
+    margin-top: 30px;
+}
+#calc:hover{
+    background-color: #009999;
+    box-shadow: 0 5px 0 #004d4d;
+}
+#calc:active{
+    position: relative;
+    top: 5px;
+    box-shadow: none;
+}
+
+
